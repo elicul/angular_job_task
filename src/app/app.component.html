@@ -1,0 +1,130 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
+    <div class="col-sm-10 col-md-10 col-lg-10 col-xl-10">
+      <div class="row">
+        <div class="col text-center" style="padding:30px;">
+          <h3>Welcome to your angular tasks</h3>
+          <div style="text-align:left;padding:30px;">
+            <h4 style="margin-bottom:30px;">Task list:</h4>
+            <ul>
+              <li>The bottom table should display the data from <b>app.service.ts</b>.</li>
+              <li>Populate dropdown items with the corresponding <b>app.service.ts</b> data.</li>
+              <li>Dropdowns needs to filter the table data. 
+                I can have <b>multiple</b> active filters.
+                The Reset button should reset filtering.
+              </li>
+              <li>Active/Inactive button should change color and value. 
+                When the users clicks on the <b>green</b> Active button it should become Inactive and red (*class 'btn-red').
+                Should filter users by active or inactive.
+              </li>
+              <li>
+                Mouse click on the column header should sort column by <b>asc/desc</b>. 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="margin-bottom:30px;margin-top:30px;">
+          <div class="col">
+            <div class="dropdown" dropdown>
+              <button dropdownToggle type="button" class="btn stylish-color dropdown-toggle waves-light" mdbRippleRadius>
+                  User
+              </button>
+
+              <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+              <div class="waves-input-wrapper waves-light" mdbRippleRadius>
+                <a class="btn btn-green">Active/Unactive</a>
+              </div>
+          </div>
+          <div class="col">
+            <div class="dropdown" dropdown>
+              <button dropdownToggle type="button" class="btn stylish-color dropdown-toggle waves-light" mdbRippleRadius>
+                  Role
+              </button>
+
+              <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>                  
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="dropdown" dropdown>
+              <button dropdownToggle type="button" class="btn stylish-color dropdown-toggle waves-light" mdbRippleRadius>
+                  Project
+              </button>
+
+              <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>                  
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="dropdown" dropdown>
+              <button dropdownToggle type="button" class="btn stylish-color dropdown-toggle waves-light" mdbRippleRadius>
+                  Task
+              </button>
+          
+              <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>                  
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="row">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th># <i class="fa fa-chevron-down" aria-hidden="true"></i></th>
+                <th>User</th>
+                <th>Is Active</th>
+                <th>Role</th>
+                <th>Project</th>
+                <th>Task</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>true</td>
+                <td>Administrator</td>
+                <td>Project 1</td>
+                <td>Task 2</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Luka</td>
+                <td>true</td>
+                <td>Worker</td>
+                <td>Project 10</td>
+                <td>Task 5</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Ante</td>
+                <td>true</td>
+                <td>Manager</td>
+                <td>Project 2</td>
+                <td>Task 3</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="waves-input-wrapper waves-light" mdbRippleRadius>
+            <a class="btn btn-red">Reset</a>
+          </div>
+      </div>
+    </div>
+    <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
+  </div>  
+</div>
+
